@@ -1,0 +1,12 @@
+{
+  "name": "bangs",
+  "version": "1.0.0",
+  "description": "DuckDuckGo style bangs with better I'm Feeling Lucky and defaults to Google\"",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Wes Roberts",
+  "license": "MIT"
+}
