@@ -1,5 +1,7 @@
 [Unit]
 AssertPathExists=$BANGS
+After=network-online.target
+Wants=network-online.target
 
 [Service]
 WorkingDirectory=$BANGS
