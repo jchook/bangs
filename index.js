@@ -18,7 +18,7 @@ async function handleRequest(req, res) {
   if (terms[0][0] === '!') {
     switch (terms[0]) {
       case '!': // lucky
-        dest = await feelingLucky(query)
+        dest = await feelingLucky(encode(terms.slice(1).join(' ')))
         break
       default:
         dest = `https://duckduckgo.com/?q=${encode(query)}`
@@ -34,7 +34,7 @@ async function handleRequest(req, res) {
 const server = http.createServer(handleRequest)
 server.listen({
   host: process.env.host || 'localhost',
-  port: process.env.port || 3000,
+  port: process.env.port || 3344,
 })
 
 /**

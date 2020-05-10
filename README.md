@@ -15,7 +15,7 @@ This app improves DuckDuckGo bangs in two critical ways:
 1. Make sure you have Node JS installed
 2. `npm start`
 3. In your browser, set your default search engine to
-   `http://localhost:3000/?q=%s`
+   `http://localhost:3344/?q=%s`
 4. Profit!
 
 # Install locally
@@ -27,7 +27,7 @@ systemd unit.
 
 ```sh
 mkdir -p ~/.config/systemd/user
-ln -s ~/path/to/bangs.service ~/.config/systemd/user
+cp ~/path/to/bangs.service ~/.config/systemd/user
 systemctl --user enable bangs
 systemctl --user start bangs
 ```

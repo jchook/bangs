@@ -1,9 +1,10 @@
 [Unit]
-AssertPathExists=/home/jchook/projects/bangs
+AssertPathExists=$BANGS
 
 [Service]
-WorkingDirectory=/home/jchook/projects/bangs
-ExecStart=/home/jchook/.local/opt/n/bin/npm start
+WorkingDirectory=$BANGS
+Environment=PORT=3344
+ExecStart=$NPM start
 Restart=always
 PrivateTmp=true
 NoNewPrivileges=true
